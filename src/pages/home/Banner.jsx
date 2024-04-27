@@ -4,8 +4,8 @@ import bannerImg from '/images/Collier1.jpg'
 const Banner = () => {
   return (
     <div className='bg-primaryBG py-12 xl:px-28 px-4'>
-        <div className='pt-20 pb-7 flex flex-col md:flex-row-reverse justify-between items-center gap-10'>
-            <div className='md:w-1/2'>
+        <div className='pt-24 flex flex-col md:flex-row-reverse justify-between items-center gap-5'>
+            <div>
                 <img className='rounded' src={bannerImg} alt="photo d'un collier" />
             </div>
             <div className='md:w-1/2'>

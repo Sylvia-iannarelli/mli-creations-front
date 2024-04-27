@@ -23,7 +23,7 @@ const Navbar = () => {
     {title: "Autres", path: "/"}
   ]
   return (
-    <header className="max-w-screen-2xl xl:px-28 px-4 absolute top-0 right-0 left-0">
+    <header className="xl:px-28 px-4 absolute top-0 right-0 left-0">
         <nav className="flex justify-between items-center container-fluid md:py-4 pt-6 pb-3">
             <IoSearchOutline className='text-Black w-5 h-5 cursor-pointer hidden md:block'/>
 
