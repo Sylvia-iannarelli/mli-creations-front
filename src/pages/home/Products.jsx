@@ -4,6 +4,9 @@ import Cards from '../../components/Cards'
 
 const Products = () => {
     const [products, setProducts] = useState([])
+    const [filteredItems, setFilteredItems] = useState([])
+    const [selectedCategory, setSelectedCategory] = useState("all")
+    const [sortOption, setSortOption] = useState("default")
 
     useEffect(() => {
         const fetchData = async () => {
@@ -11,6 +14,7 @@ const Products = () => {
                 const response = await fetch("/products.json")
                 const data = await response.json()
                 setProducts(data)
+                setFilteredItems(data)
             } catch (error) {
                 console.log("Error fetching data:", error)
             }
@@ -18,7 +22,21 @@ const Products = () => {
         fetchData()
     }, [])
 
-    console.log(products)
+    // console.log(products)
+
+    // filtering function
+    const filterItems = (category) => {
+        const filtered = category === "all" ? (products) : products.filter((item) => item.category === category)
+
+        setFilteredItems(filtered)
+        setSelectedCategory(category)
+    }
+
+    // show all products
+    const showAll = () => {
+        setFilteredItems(products)
+        selectedCategory("all")
+    }
 
     return (
         <div className='max-w-screen-2xl container mx-auto xl:px-28 px-4 mb-12'>
@@ -29,13 +47,13 @@ const Products = () => {
                 <div className='flex flex-col md:flex-row flex-wrap md:justify-between items-center space-y-3 mb-8'>
                     {/* Options de filtre */}
                     <div className='flex flex-row justify-start md:items-center md:gap-8 gap-4 flex-wrap'>
-                        <button>Tous les bijoux</button>
-                        <button>Bagues</button>
-                        <button>Boucles d&apos;oreille</button>
-                        <button>Bracelets</button>
-                        <button>Colliers</button>
-                        <button>Pendentifs</button>
-                        <button>Autres bijoux</button>
+                        <button onClick={showAll}>Tous les bijoux</button>
+                        <button onClick={() => filterItems("Bague")}>Bagues</button>
+                        <button onClick={() => filterItems("Boucles-d-oreille")}>Boucles d&apos;oreille</button>
+                        <button onClick={() => filterItems("Bracelet")}>Bracelets</button>
+                        <button onClick={() => filterItems("Collier")}>Colliers</button>
+                        <button onClick={() => filterItems("Pendentif")}>Pendentifs</button>
+                        <button onClick={() => filterItems("Autre")}>Autres bijoux</button>
                     </div>
 
                     {/* Options de tri */}
@@ -54,7 +72,7 @@ const Products = () => {
                     </div>
                 </div>
 
-                <Cards filteredItems={products} />
+                <Cards filteredItems={filteredItems} />
 
             </div>
         </div>
