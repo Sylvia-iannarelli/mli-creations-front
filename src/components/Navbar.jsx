@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { IoSearchOutline } from "react-icons/io5"
-import { HiOutlineUser } from "react-icons/hi2";
+import { PiUserCircleLight } from "react-icons/pi";
 import { PiHandbagLight } from "react-icons/pi";
 import { LiaBarsSolid } from "react-icons/lia";
 import logo from "/Logo-mli-creations.png"
@@ -32,7 +32,7 @@ const Navbar = () => {
 
             {/* boutons compte et panier */}
             <div className="text-lg text-Black sm:flex items-center gap-4 hidden">
-                <a href="/" className="flex items-center gap-2">{<HiOutlineUser />} Compte</a>
+                <a href="/" className="flex items-center gap-2">{<PiUserCircleLight />} Compte</a>
                 <a href="/" className="flex items-center gap-2">{<PiHandbagLight />} Panier</a>
             </div>
 
@@ -64,7 +64,7 @@ const Navbar = () => {
 
         {/* Menu catégories pour mobile */}
         <div>
-          <ul className={`bg-Black text-white px-4 py-2 rounded ${isMenuOpen ? "" : "hidden"}`}>
+          <ul className={`bg-Black text-white px-4 py-2 rounded-lg ${isMenuOpen ? "" : "hidden"}`}>
               {
                 navItems.map(({title, path}) => (
                   <li key={title} className='hover:text-orange-500 my-3 cursor-pointer'>
