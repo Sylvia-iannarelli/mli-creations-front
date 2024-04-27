@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 const Favorites = () => {
   return (
-    <div className='max-w-screen-2xl mx-auto container xl:px-28 px-4 py-12'>
+    <div className='max-w-screen-2xl mx-auto container xl:px-28 px-4'>
         {/* Favorites grid */}
-        <div className='mt-8 flex flex-col md:flex-row items-center gap-4'>
+        <div className='my-4 flex flex-col md:flex-row items-center gap-4'>
             <p className='uppercase md:-rotate-90 text-center bg-Black text-white md:p-1
             .5 p-2 rounded-sm inline-flex'>Voir les articles coup de cœur <PiHeartStraightThin /> <PiHeartStraightThin /> <PiHeartStraightThin /></p>
             <div className='md:w-1/2'>
