@@ -3,7 +3,7 @@ import bannerImg from '/images/Collier1.jpg'
 
 const Banner = () => {
   return (
-    <div className='bg-primaryBG py-12 xl:px-28 px-4'>
+    <div className='max-w-screen-2xl mx-auto container bg-primaryBG py-12 xl:px-28 px-4'>
         <div className='pt-24 flex flex-col md:flex-row-reverse justify-between items-center gap-5'>
             <div>
                 <img className='rounded' src={bannerImg} alt="photo d'un collier" />

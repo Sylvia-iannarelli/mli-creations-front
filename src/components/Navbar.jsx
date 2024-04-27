@@ -23,14 +23,14 @@ const Navbar = () => {
     {title: "Autres", path: "/"}
   ]
   return (
-    <header className="xl:px-28 px-4 absolute top-0 right-0 left-0">
+    <header className="max-w-screen-2xl mx-auto container xl:px-28 px-4 absolute top-0 right-0 left-0">
         <nav className="flex justify-between items-center container-fluid md:py-4 pt-6 pb-3">
             <IoSearchOutline className='text-Black w-5 h-5 cursor-pointer hidden md:block'/>
 
             {/* logo */}
             <a href="/"><img src={logo} alt="logo de la marque mli-creations" /></a>
 
-            {/* boutons compte et achats */}
+            {/* boutons compte et panier */}
             <div className="text-lg text-Black sm:flex items-center gap-4 hidden">
                 <a href="/" className="flex items-center gap-2">{<HiOutlineUser />} Compte</a>
                 <a href="/" className="flex items-center gap-2">{<PiHandbagLight />} Panier</a>
