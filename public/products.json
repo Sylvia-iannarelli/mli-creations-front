@@ -25,6 +25,14 @@
     },
     {
         "id":4,
+       "title":"Bracelet gris",
+       "category": "Bracelet",
+       "price": 15,
+       "image":"/images/products/image7.jpg",
+       "status": "Meilleure vente"
+    },
+    {
+        "id":5,
        "title":"Bague bleue",
        "category": "Bague",
        "price": 20,
@@ -32,7 +40,7 @@
        "status": "Nouveauté"
     },
     {
-        "id":5,
+        "id":6,
        "title":"Bracelet orange",
        "category": "Bracelet",
        "price": 30,
@@ -40,19 +48,11 @@
        "status": "Nouveauté"
     },
     {
-        "id":6,
+        "id":7,
        "title":"Bracelet bleu",
        "category": "Bracelet",
        "price": 30,
        "image":"/images/products/image6.jpg",
-       "status": "Meilleure vente"
-    },
-    {
-        "id":7,
-       "title":"Bracelet gris",
-       "category": "Bracelet",
-       "price": 15,
-       "image":"/images/products/image7.jpg",
        "status": "Meilleure vente"
     },
     {
