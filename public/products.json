@@ -17,9 +17,9 @@
     },
     {
         "id":3,
-       "title":"Collier vert",
-       "category": "Collier",
-       "price": 30,
+       "title":"Pendentif vert",
+       "category": "Pendentif",
+       "price": 20,
        "image":"/images/products/image3.jpg",
        "status": "Meilleure vente"
     },
