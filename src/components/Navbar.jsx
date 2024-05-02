@@ -15,16 +15,13 @@ const Navbar = () => {
   }
 
   const navItems = [
-    {title: "Bagues", path: "/"},
-    {title: "Boucles d'oreille", path: "/"},
-    {title: "Bracelets", path: "/"},
-    {title: "Colliers", path: "/"},
-    {title: "Pendentifs", path: "/"},
-    {title: "Autres", path: "/"}
+    {title: "Nouvelle collection", path: "/"},
+    {title: "Tous les bijoux", path: "/"},
+    {title: "Me-contacter", path: "/"}
   ]
   return (
-    <header className="max-w-screen-2xl mx-auto container xl:px-28 px-4 top-0 right-0 left-0 fixed z-10 bg-[url('../../public/images/Capture-BG.JPG')]">
-        <nav className="flex justify-between items-center container-fluid md:py-4 pt-6 pb-3">
+    <header className="max-w-screen-2xl mx-auto container xl:px-28 px-4 top-0 right-0 left-0 fixed z-10 bg-[url('/images/Capture-BG.JPG')]">
+        <nav className="flex justify-between items-end container-fluid md:py-4 pt-6 pb-3">
             <IoSearchOutline className='text-white w-5 h-5 cursor-pointer hidden md:block'/>
 
             {/* logo */}
@@ -61,7 +58,7 @@ const Navbar = () => {
         </div>
 
         {/* Menu catégories pour mobile */}
-        <div>
+        <div className='max-w-1/2 absolute right-0'>
           <ul className={`bg-Black text-white px-4 py-2 rounded-lg ${isMenuOpen ? "" : "hidden"}`}>
               {
                 navItems.map(({title, path}) => (
