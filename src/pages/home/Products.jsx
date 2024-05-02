@@ -30,36 +30,40 @@ const Products = () => {
 
         setFilteredItems(filtered)
         setSelectedCategory(category)
+        setSortOption("default")
     }
 
     // show all products
     const showAll = () => {
+        setSortOption("default")
         setFilteredItems(products)
         selectedCategory("all")
     }
 
     // sorting functionality
     const handleSortChange = (option) => {
-        setSortOption(option);
+        setSortOption(option)
 
         // logic for sorting
         let sortedItems = [...filteredItems]
         
         switch (option) {
-            case "A-Z" :
-                sortedItems.sort((a, b) => b.title.localeCompare(a.title))
+            case "Nouveaute" :
+                sortedItems.sort((a, b) => b.id - a.id)
                 break;
-            case "Z-A" :
+            case "A-Z" :
                 sortedItems.sort((a, b) => a.title.localeCompare(b.title))
                 break;
-            case "low-to-high" :
-                sortedItems.sort((a, b) => b.price - a.price)
+            case "Z-A" :
+                sortedItems.sort((a, b) => b.title.localeCompare(a.title))
                 break;
-            case "high-to-low" :
+            case "low-to-high" :
                 sortedItems.sort((a, b) => a.price - b.price)
                 break;
+            case "high-to-low" :
+                sortedItems.sort((a, b) => b.price - a.price)
+                break;
             case "default" :
-                sortedItems.sort((a, b) => a.id - b.id)
                 break;
             }
 
@@ -97,7 +101,8 @@ const Products = () => {
                             value={sortOption}
                             className='bg-Black 
                             text-white px-2 py-1 rounded-r-lg '>
-                                <option value="default">Nouveauté</option>
+                                <option value="default">Aucun</option>
+                                <option value="Nouveaute">Nouveauté</option>
                                 <option value="A-Z">A - Z</option>
                                 <option value="Z-A">Z - A</option>
                                 <option value="low-to-high">Prix croissant</option>

@@ -6,7 +6,7 @@ const Cards = ({filteredItems}) => {
     <div className='grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 items-center justify-center gap-12 shadow-sm'>
         {
             // Pour montrer un nombre donné de produits : filteredItems.slice(0, 8).map((item) => (
-            filteredItems.reverse().map((item) => (
+            filteredItems.map((item) => (
                 <div key={item.id}>
                     <Link to={`/shop/${item.id}`}>
                         <img className='mx-auto w-full rounded-lg hover:scale-105 transition-all duration-300' src={item.image} alt="" />
