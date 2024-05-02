@@ -3,7 +3,7 @@ import { IoSearchOutline } from "react-icons/io5"
 import { PiUserCircleLight } from "react-icons/pi";
 import { PiHandbagLight } from "react-icons/pi";
 import { LiaBarsSolid } from "react-icons/lia";
-import logo from "/Logo-mli-creations.png"
+import logo from "/Logo-mli-creations-blanc.png"
 import { Link } from 'react-router-dom';
 import { LiaTimesSolid } from "react-icons/lia";
 
@@ -23,35 +23,33 @@ const Navbar = () => {
     {title: "Autres", path: "/"}
   ]
   return (
-    <header className="max-w-screen-2xl mx-auto container xl:px-28 px-4 absolute top-0 right-0 left-0">
+    <header className="max-w-screen-2xl mx-auto container xl:px-28 px-4 top-0 right-0 left-0 fixed z-10 bg-[url('../../public/images/Capture-BG.JPG')]">
         <nav className="flex justify-between items-center container-fluid md:py-4 pt-6 pb-3">
-            <IoSearchOutline className='text-Black w-5 h-5 cursor-pointer hidden md:block'/>
+            <IoSearchOutline className='text-white w-5 h-5 cursor-pointer hidden md:block'/>
 
             {/* logo */}
-            <a href="/"><img src={logo} alt="logo de la marque mli-creations" /></a>
+            <a href="/"><img className="w-50" src={logo} alt="logo de la marque mli-creations" /></a>
 
             {/* boutons compte et panier */}
-            <div className="text-lg text-Black sm:flex items-center gap-4 hidden">
+            <div className="text-lg text-white sm:flex items-center gap-4 hidden">
                 <a href="/" className="flex items-center gap-2">{<PiUserCircleLight />} Compte</a>
                 <a href="/" className="flex items-center gap-2">{<PiHandbagLight />} Panier</a>
             </div>
 
             {/*  navbar pour petits écrans*/}
-            <div className='sm:hidden'>
+            <div className='sm:hidden w-6 h-6'>
               <button onClick={toggleMenu}>
                 {
-                  isMenuOpen ? <LiaTimesSolid className='w-6 h-6 text-Black' /> : <LiaBarsSolid className='w-6 h-6 text-Black' />
+                  isMenuOpen ? <LiaTimesSolid className='w-6 h-6 text-white' /> : <LiaBarsSolid className='w-6 h-6 text-white' />
                 }
               </button>
             </div>
 
         </nav>
-        
-        <hr />
 
         {/* Menu catégories */}
         <div className='pt-4'>
-          <ul className='lg:flex items-center justify-between text-Black hidden'>
+          <ul className='lg:flex items-center justify-between text-white hidden'>
             {
               navItems.map(({title, path}) => (
                 <li key={title} className='hover:text-orange-500'>
