@@ -29,7 +29,7 @@ const BestSellers = () => {
             <div className='flex justify-center'>
 
                 <div className='mb-4 flex flex-col md:flex-row items-center gap-4'>
-                    <p className='uppercase text-center bg-Black text-white md:p-2 p-3 m-3 rounded-sm inline-flex'>Les coups de cœur <PiHeartStraightThin /> <PiHeartStraightThin /> <PiHeartStraightThin /></p>
+                    <p className='uppercase text-center bg-Gold text-Black md:p-3 p-3 m-3 rounded-md inline-flex'>Les coups de cœur <PiHeartStraightThin /> <PiHeartStraightThin /> <PiHeartStraightThin /></p>
                 </div>
 
             </div>

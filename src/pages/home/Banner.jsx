@@ -8,7 +8,7 @@ const Banner = () => {
             <div className='md:w-1/2'>
                 <h1 className='text-4xl font-light mb-3'>Nouvelle collection</h1>
                 <p className='text-l mb-3'>Inspirée des couleurs chatoyantes de l&apos;été qui approche, resplendissez sous le soleil...</p>
-                <button className='bg-Black hover:bg-orange-500 px-6 py-2 mb-2 text-white font-semibold rounded-lg'>Découvrir</button>
+                <button className='bg-Gold border border-Gold hover:bg-Blue1 hover:text-Black px-6 py-2 mb-2 text-Black rounded-lg'>Découvrir</button>
             </div>
             <div className='md:w-1/2'>
                 <Link to="/"><img className='w-full hover:scale-105 transition-all duration-200 rounded-lg' src="/images/favoris/image3.jpg" alt="" /></Link>

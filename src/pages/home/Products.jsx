@@ -80,27 +80,27 @@ const Products = () => {
                 <div className='flex flex-col md:flex-row flex-wrap md:justify-between items-center space-y-3 mb-8'>
                     {/* Options de filtre */}
                     <div className='flex flex-row justify-start md:items-center md:gap-8 gap-4 flex-wrap'>
-                        <button onClick={showAll}>Tous les bijoux</button>
-                        <button onClick={() => filterItems("Bague")}>Bagues</button>
-                        <button onClick={() => filterItems("Boucles-d-oreille")}>Boucles d&apos;oreille</button>
-                        <button onClick={() => filterItems("Bracelet")}>Bracelets</button>
-                        <button onClick={() => filterItems("Collier")}>Colliers</button>
-                        <button onClick={() => filterItems("Pendentif")}>Pendentifs</button>
-                        <button onClick={() => filterItems("Autre")}>Autres bijoux</button>
+                        <button className="hover:text-Gold" onClick={showAll}>Tous les bijoux</button>
+                        <button className="hover:text-Gold" onClick={() => filterItems("Bague")}>Bagues</button>
+                        <button className="hover:text-Gold" onClick={() => filterItems("Boucles-d-oreille")}>Boucles d&apos;oreille</button>
+                        <button className="hover:text-Gold" onClick={() => filterItems("Bracelet")}>Bracelets</button>
+                        <button className="hover:text-Gold" onClick={() => filterItems("Collier")}>Colliers</button>
+                        <button className="hover:text-Gold" onClick={() => filterItems("Pendentif")}>Pendentifs</button>
+                        <button className="hover:text-Gold" onClick={() => filterItems("Autre")}>Autres bijoux</button>
                     </div>
 
                     {/* Options de tri */}
                     <div className='flex justify-end mb-4'>
-                        <div className='bg-Black p-2 rounded-l-lg items-center'>
-                            <PiSortAscendingDuotone className='text-white h-5 w-5'/>
+                        <div className='bg-Gold p-2 rounded-l-lg items-center'>
+                            <PiSortAscendingDuotone className='text-Black h-5 w-5'/>
                         </div>
 
                         <select 
                             id="sort"
                             onChange={(e) => handleSortChange(e.target.value)}
                             value={sortOption}
-                            className='bg-Black 
-                            text-white px-2 py-1 rounded-r-lg '>
+                            className='bg-Gold 
+                            text-Black px-2 py-1 rounded-r-lg '>
                                 <option value="default">Aucun</option>
                                 <option value="Nouveaute">Nouveauté</option>
                                 <option value="A-Z">A - Z</option>
