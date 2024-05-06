@@ -17,12 +17,15 @@ const Navbar = () => {
   const navItems = [
     {title: "Nouvelle collection", path: "/"},
     {title: "Tous les bijoux", path: "/"},
+    {title: "Les coups de cœur", path: "/"},
     {title: "Me-contacter", path: "/"}
   ]
   return (
     <header className="max-w-screen-2xl mx-auto container xl:px-28 px-4 top-0 right-0 left-0 fixed z-10 bg-[url('/images/Capture-BG.JPG')]">
         <nav className="flex justify-between items-end container-fluid md:py-4 pt-6 pb-3">
+          <div className='p-1'>
             <IoSearchOutline className='text-white w-5 h-5 cursor-pointer hidden md:block'/>
+          </div>
 
             {/* logo */}
             <a href="/"><img className="w-50" src={logo} alt="logo de la marque mli-creations" /></a>
