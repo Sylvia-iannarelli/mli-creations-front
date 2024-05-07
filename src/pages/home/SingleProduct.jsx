@@ -7,6 +7,10 @@ const SingleProduct = () => {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, [])
+
+    useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await fetch("/products.json")
@@ -19,7 +23,6 @@ const SingleProduct = () => {
             }
         }
         fetchData()
-        window.scrollTo({top: 0, behavior: 'smooth'})
     }, [id])
 
     const {title, category, price, image, status} = products
