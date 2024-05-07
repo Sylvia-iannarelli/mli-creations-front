@@ -23,22 +23,22 @@ const Footer = () => {
             <div className="text-Black">
                 <h4 className="font-semibold mb-3">CATALOGUE</h4>
                 <div className="space-y-2">
-                <Link to="/" className="text-sm block hover:text-orange-500">
+                <Link to="/" className="text-sm block hover:text-Gold">
                     Bagues
                 </Link>
-                <Link to="/" className="text-sm block hover:text-orange-500">
-                    Boucles d'oreille
+                <Link to="/" className="text-sm block hover:text-Gold">
+                    Boucles d&apos;oreille
                 </Link>
-                <Link to="/" className="text-sm block hover:text-orange-500">
+                <Link to="/" className="text-sm block hover:text-Gold">
                     Bracelets
                 </Link>
-                <Link to="/" className="text-sm block hover:text-orange-500">
+                <Link to="/" className="text-sm block hover:text-Gold">
                     Colliers
                 </Link>
-                <Link to="/" className="text-sm block hover:text-orange-500">
+                <Link to="/" className="text-sm block hover:text-Gold">
                     Pendentifs
                 </Link>
-                <Link to="/" className="text-sm block hover:text-orange-500">
+                <Link to="/" className="text-sm block hover:text-Gold">
                     Autres bijoux
                 </Link>
                 </div>
@@ -48,16 +48,16 @@ const Footer = () => {
             <div className="text-Black">
                 <h4 className="font-semibold mb-3">INFORMATIONS</h4>
                 <div className="space-y-2">
-                <Link to="/" className="text-sm block hover:text-orange-500">
+                <Link to="/" className="text-sm block hover:text-Gold">
                     Qui suis-je ?
                 </Link>
-                <Link to="/" className="text-sm block hover:text-orange-500">
+                <Link to="/" className="text-sm block hover:text-Gold">
                     Soin des bijoux et réparation
                 </Link>
-                <Link to="/" className="text-sm block hover:text-orange-500">
+                <Link to="/" className="text-sm block hover:text-Gold">
                     Conditions générales de vente
                 </Link>
-                <Link to="/" className="text-sm block hover:text-orange-500">
+                <Link to="/" className="text-sm block hover:text-Gold">
                     Questions fréquentes
                 </Link>
                 </div>
@@ -67,16 +67,16 @@ const Footer = () => {
             <div className="text-Black">
                 <h4 className="text-transparent font-semibold mb-3">...</h4>
                 <div className="space-y-2">
-                    <Link to="/" className="text-sm block hover:text-orange-500">
+                    <Link to="/" className="text-sm block hover:text-Gold">
                     Votre compte & vos commandes
                 </Link>
-                <Link to="/" className="text-sm block hover:text-orange-500">
-                    Conditions d'utilisation du site
+                <Link to="/" className="text-sm block hover:text-Gold">
+                    Conditions d&apos;utilisation du site
                 </Link>
-                <Link to="/" className="text-sm block hover:text-orange-500">
+                <Link to="/" className="text-sm block hover:text-Gold">
                     Livraisons et retours
                 </Link>
-                <Link to="/" className="text-sm block hover:text-orange-500">
+                <Link to="/" className="text-sm block hover:text-Gold">
                     Mentions légales
                 </Link>
                 </div>
