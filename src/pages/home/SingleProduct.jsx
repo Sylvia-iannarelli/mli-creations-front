@@ -30,7 +30,7 @@ const SingleProduct = () => {
 
                 <div className='mt-4'>
                     <a href="/" className='text-gray-600 hover:text-Gold'>Page d&apos;accueil / </a>
-                    <a href="/shop" className='font-bold text-Black'>Détail bijou</a>
+                    <a href="/shop" className='font-bold text-Black'>Détail du bijou</a>
                 </div>
 
                 <div className='mt-4 sm:mt-10'>
@@ -53,7 +53,7 @@ const SingleProduct = () => {
                                             <input type="number" name="price" id="price" defaultValue={1} className='text-md border border-gray-300 font-semibold max-w-40 outline-none rounded-md ml-2 py-2 px-2 md:py-3 md:px-4 focus:border-Gold'/>
                                         </div>
                                         <div className='w-full text-left my-4 flex justify-center'>
-                                            <button className='flex justify-center items-center gap-2 py-3 px-4 bg-Gold font-bold border border-Gold text-Black rounded-md ease-in-out duration-150 shadow-slate-600 hover:bg-Blue1 hover:text-Black lg-m-0 md:px-6'><span>Ajouter au panier</span><FaArrowAltCircleRight/></button>
+                                            <button className='flex justify-center items-center gap-2 py-3 px-4 bg-Gold border border-Gold text-Black rounded-lg ease-in-out duration-150 shadow-slate-600 hover:bg-Blue1 hover:text-Black lg-m-0 md:px-6'><span>Ajouter au panier</span><FaArrowAltCircleRight/></button>
                                         </div>
                                     </div>
                                 </div>

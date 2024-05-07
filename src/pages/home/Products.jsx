@@ -90,8 +90,8 @@ const Products = () => {
                     </div>
 
                     {/* Options de tri */}
-                    <div className='flex justify-end mb-4'>
-                        <div className='bg-Gold p-2 rounded-l-lg items-center'>
+                    <div className='flex justify-end mb-4 bg-Gold border border-Gold rounded-lg hover:bg-Blue1'>
+                        <div className='bg-transparent p-3 rounded-l-lg items-center'>
                             <PiSortAscendingDuotone className='text-Black h-5 w-5'/>
                         </div>
 
@@ -99,8 +99,8 @@ const Products = () => {
                             id="sort"
                             onChange={(e) => handleSortChange(e.target.value)}
                             value={sortOption}
-                            className='bg-Gold 
-                            text-Black px-2 py-1 rounded-r-lg '>
+                            className='bg-transparent 
+                            text-Black px-2 rounded-r-lg'>
                                 <option value="default">Aucun</option>
                                 <option value="Nouveaute">Nouveauté</option>
                                 <option value="A-Z">A - Z</option>
