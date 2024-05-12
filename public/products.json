@@ -1,74 +1,74 @@
 [
     {
         "id":1,
-       "title":"Collier noir",
-       "category": "Collier",
+       "name":"Collier noir",
+       "type": "Collier",
        "price": 35,
-        "image":"/images/products/image1.jpg",
+        "picture":"/images/products/image1.jpg",
         "status": "Meilleure vente"
     },
     {
         "id":2,
-       "title":"Collier bleu",
-       "category": "Collier",
+       "name":"Collier bleu",
+       "type": "Collier",
        "price": 40,
-       "image":"/images/products/image2.jpg",
+       "picture":"/images/products/image2.jpg",
        "status": "Meilleure vente"
     },
     {
         "id":3,
-       "title":"Pendentif vert",
-       "category": "Pendentif",
+       "name":"Pendentif vert",
+       "type": "Pendentif",
        "price": 20,
-       "image":"/images/products/image3.jpg",
+       "picture":"/images/products/image3.jpg",
        "status": "Meilleure vente"
     },
     {
         "id":4,
-       "title":"Bracelet gris",
-       "category": "Bracelet",
+       "name":"Bracelet gris",
+       "type": "Bracelet",
        "price": 15,
-       "image":"/images/products/image7.jpg",
+       "picture":"/images/products/image7.jpg",
        "status": "Meilleure vente"
     },
     {
         "id":5,
-       "title":"Bague bleue",
-       "category": "Bague",
+       "name":"Bague bleue",
+       "type": "Bague",
        "price": 20,
-       "image":"/images/products/image4.jpg",
+       "picture":"/images/products/image4.jpg",
        "status": "Nouveauté"
     },
     {
         "id":6,
-       "title":"Bracelet orange",
-       "category": "Bracelet",
+       "name":"Bracelet orange",
+       "type": "Bracelet",
        "price": 30,
-       "image":"/images/products/image5.jpg",
+       "picture":"/images/products/image5.jpg",
        "status": "Nouveauté"
     },
     {
         "id":7,
-       "title":"Bracelet bleu",
-       "category": "Bracelet",
+       "name":"Bracelet bleu",
+       "type": "Bracelet",
        "price": 30,
-       "image":"/images/products/image6.jpg",
+       "picture":"/images/products/image6.jpg",
        "status": "Nouveauté"
     },
     {
         "id":8,
-       "title":"Bracelet bleu clair",
-       "category": "Bracelet",
+       "name":"Bracelet bleu clair",
+       "type": "Bracelet",
        "price": 30,
-       "image":"/images/products/image8.jpg",
+       "picture":"/images/products/image8.jpg",
        "status": "Nouveauté"
     },
     {
         "id":9,
-       "title":"Pendentif noir",
-       "category": "Pendentif",
+       "name":"Pendentif noir",
+       "type": "Pendentif",
        "price": 15,
-       "image":"/images/products/image9.jpg",
+       "picture":"/images/products/image9.jpg",
        "status": "Nouveauté"
     }
    

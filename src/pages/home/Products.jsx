@@ -5,16 +5,17 @@ import Cards from '../../components/Cards'
 const Products = () => {
     const [products, setProducts] = useState([])
     const [filteredItems, setFilteredItems] = useState([])
-    const [selectedCategory, setSelectedCategory] = useState("all")
+    const [selectedType, setSelectedType] = useState("all")
     const [sortOption, setSortOption] = useState("default")
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("/products.json")
+                const response = await fetch("http://localhost:8000/api/products")
                 const data = await response.json()
                 setProducts(data)
                 setFilteredItems(data)
+                console.log(data)
             } catch (error) {
                 console.log("Error fetching data:", error)
             }
@@ -25,11 +26,11 @@ const Products = () => {
     // console.log(products)
 
     // filtering function
-    const filterItems = (category) => {
-        const filtered = category === "all" ? (products) : products.filter((item) => item.category === category)
+    const filterItems = (type) => {
+        const filtered = type === "all" ? (products) : products.filter((item) => item.type.name === type)
 
         setFilteredItems(filtered)
-        setSelectedCategory(category)
+        setSelectedType(type)
         setSortOption("default")
     }
 
@@ -37,7 +38,7 @@ const Products = () => {
     const showAll = () => {
         setSortOption("default")
         setFilteredItems(products)
-        selectedCategory("all")
+        selectedType("all")
     }
 
     // sorting functionality
@@ -52,10 +53,10 @@ const Products = () => {
                 sortedItems.sort((a, b) => b.id - a.id)
                 break;
             case "A-Z" :
-                sortedItems.sort((a, b) => a.title.localeCompare(b.title))
+                sortedItems.sort((a, b) => a.name.localeCompare(b.name))
                 break;
             case "Z-A" :
-                sortedItems.sort((a, b) => b.title.localeCompare(a.title))
+                sortedItems.sort((a, b) => b.name.localeCompare(a.name))
                 break;
             case "low-to-high" :
                 sortedItems.sort((a, b) => a.price - b.price)
