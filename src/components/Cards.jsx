@@ -9,12 +9,12 @@ const Cards = ({filteredItems}) => {
             filteredItems.map((item) => (
                 <div key={item.id}>
                     <Link to={`/shop/${item.id}`}>
-                        <img className='mx-auto w-full rounded-lg hover:scale-105 transition-all duration-300' src={item.image} alt="" />
+                        <img className='mx-auto w-full rounded-lg hover:scale-105 transition-all duration-300' src={`https://mli-creations-back-office.iannarelli.fr/uploads/photos/${item.picture}`} alt="" />
                     </Link>
                     <div className='mt-3 px-1'>
-                        <h4 className='text-base mb-2'>{item.title}</h4>
+                        <h4 className='text-base mb-2'>{item.name}</h4>
                         <div className='flex justify-between'>
-                            <p className='text-Black/50'>{item.category}</p>
+                            <p className='text-Black/50'>{item.type.name}</p>
                             <p className='font-semibold'>{item.price} €</p>
                         </div>
                     </div>

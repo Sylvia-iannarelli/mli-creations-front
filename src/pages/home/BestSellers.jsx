@@ -17,12 +17,13 @@ const BestSellers = () => {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        fetch("products.json").then(res => res.json()).then(data => setProducts(data))
+        fetch("https://mli-creations-back-office.iannarelli.fr/api/products").then(res => res.json()).then(data => setProducts(data))
     }, [])
 
-    const bestSellers = products.filter((item) => item.status === "Meilleure vente")
+    const bestSellers = products.filter((item) => item.status === "coups-de-cœur")
 
-    // console.log(bestSellers)
+    console.log(products)
+    console.log(bestSellers)
 
     return (
         <div className='max-w-screen-2xl container mx-auto xl:px-28 px-4'>
@@ -69,12 +70,12 @@ const BestSellers = () => {
                         bestSellers.map((product) => (
                             <SwiperSlide className="pb-8" key={product.id}>
                                 <Link to={`/shop/${product.id}`}>
-                                    <img className='mx-auto w-full rounded-lg hover:scale-105 transition-all duration-300' src={product.image} alt="" />
+                                    <img className='mx-auto w-full rounded-lg hover:scale-105 transition-all duration-300' src={`https://mli-creations-back-office.iannarelli.fr/uploads/photos/${product.picture}`} alt="" />
                                 </Link>
                                 <div className='mt-3 px-1'>
-                                    <h4 className='text-base mb-1'>{product.title}</h4>
+                                    <h4 className='text-base mb-1'>{product.name}</h4>
                                     <div className='flex justify-between'>
-                                        <p className='text-Black/50'>{product.category}</p>
+                                        <p className='text-Black/50'>{product.type.name}</p>
                                         <p className='font-semibold'>{product.price} €</p>
                                     </div>
                                 </div>
