@@ -17,12 +17,13 @@ const BestSellers = () => {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        fetch("products.json").then(res => res.json()).then(data => setProducts(data))
+        fetch("https://mli-creations-back-office.iannarelli.fr/api/products").then(res => res.json()).then(data => setProducts(data))
     }, [])
 
-    const bestSellers = products.filter((item) => item.status === "Meilleure vente")
+    const bestSellers = products.filter((item) => item.status === "coups-de-cœur")
 
-    // console.log(bestSellers)
+    console.log(products)
+    console.log(bestSellers)
 
     return (
         <div className='max-w-screen-2xl container mx-auto xl:px-28 px-4'>
@@ -74,7 +75,7 @@ const BestSellers = () => {
                                 <div className='mt-3 px-1'>
                                     <h4 className='text-base mb-1'>{product.name}</h4>
                                     <div className='flex justify-between'>
-                                        <p className='text-Black/50'>{product.type}</p>
+                                        <p className='text-Black/50'>{product.type.name}</p>
                                         <p className='font-semibold'>{product.price} €</p>
                                     </div>
                                 </div>

@@ -5,7 +5,7 @@
        "type": "Collier",
        "price": 35,
         "picture":"/images/products/image1.jpg",
-        "status": "Meilleure vente"
+        "status": "coups-de-coeur"
     },
     {
         "id":2,
@@ -13,7 +13,7 @@
        "type": "Collier",
        "price": 40,
        "picture":"/images/products/image2.jpg",
-       "status": "Meilleure vente"
+       "status": "coups-de-coeur"
     },
     {
         "id":3,
@@ -21,7 +21,7 @@
        "type": "Pendentif",
        "price": 20,
        "picture":"/images/products/image3.jpg",
-       "status": "Meilleure vente"
+       "status": "coups-de-coeur"
     },
     {
         "id":4,
@@ -29,7 +29,7 @@
        "type": "Bracelet",
        "price": 15,
        "picture":"/images/products/image7.jpg",
-       "status": "Meilleure vente"
+       "status": "coups-de-coeur"
     },
     {
         "id":5,
