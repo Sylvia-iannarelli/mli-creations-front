@@ -6,6 +6,7 @@ import BestSellers from './BestSellers'
 const Home = () => {
   return (
     <div>
+      {/* <ScrollToHashElement /> */}
       <Banner />
       <Products />
       <BestSellers />

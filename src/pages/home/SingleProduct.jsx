@@ -13,7 +13,7 @@ const SingleProduct = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("https://mli-creations-back-office.iannarelli.fr/api/products")
+                const response = await fetch("http://localhost:8000/api/products")
                 const data = await response.json()
                 const product = data.filter((p) => p.id == id)
                 console.log(product)
@@ -39,7 +39,7 @@ const SingleProduct = () => {
                 <div className='mt-4 sm:mt-10'>
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 h-max'>
                         <div>
-                            <img src={`https://mli-creations-back-office.iannarelli.fr/uploads/photos/${picture}`} alt="Photo du bijou sélectionné" className='w-full rounded-lg' />
+                            <img src={`http://localhost:8000/uploads/photos/${picture}`} alt="Photo du bijou sélectionné" className='w-full rounded-lg' />
                         </div>
 
                         {/* Product details */}
