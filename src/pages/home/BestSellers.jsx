@@ -26,17 +26,17 @@ const BestSellers = () => {
     console.log(bestSellers)
 
     return (
-        <div className='max-w-screen-2xl container mx-auto xl:px-28 px-4'>
-            <div className='flex justify-center'>
+        <div id="bestSellers" className='max-w-screen-2xl container mx-auto xl:px-28 px-4 pt-20'>
+            <div className='flex justify-center pt-20'>
 
                 <div className='mb-4 flex flex-col md:flex-row items-center gap-4'>
-                    <p className='uppercase text-center bg-Gold text-Black md:p-3 p-3 m-3 rounded-md inline-flex'>Les coups de cœur <PiHeartStraightThin /> <PiHeartStraightThin /> <PiHeartStraightThin /></p>
+                    <p className='uppercase text-center bg-Gold text-Black md:p-3 p-3 mb-12 rounded-md inline-flex text-xl'>Les coups de cœur <PiHeartStraightThin /> <PiHeartStraightThin /> <PiHeartStraightThin /></p>
                 </div>
 
             </div>
 
             {/* Best sellers card */}
-            <div className='mb-16 '>
+            <div>
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={10}

@@ -73,8 +73,8 @@ const Products = () => {
     }
 
     return (
-        <div className='max-w-screen-2xl container mx-auto xl:px-28 px-4 mb-12'>
-            <h2 className='text-3xl text-center my-8'>Tous les bijoux</h2>
+        <div id="products" className='max-w-screen-2xl container mx-auto xl:px-28 px-4 pt-20'>
+            <h2 className='text-3xl text-center pt-20 mb-8'>Tous les bijoux</h2>
 
             {/* Products */}
             <div>

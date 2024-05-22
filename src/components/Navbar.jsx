@@ -4,7 +4,6 @@ import { PiUserCircleLight } from "react-icons/pi";
 import { PiHandbagLight } from "react-icons/pi";
 import { LiaBarsSolid } from "react-icons/lia";
 import logo from "/Logo-mli-creations-blanc.png"
-import { Link } from 'react-router-dom';
 import { LiaTimesSolid } from "react-icons/lia";
 
 const Navbar = () => {
@@ -15,9 +14,9 @@ const Navbar = () => {
   }
 
   const navItems = [
-    {title: "Nouvelle collection", path: "/"},
-    {title: "Tous les bijoux", path: "/"},
-    {title: "Les coups de cœur", path: "/"},
+    {title: "Nouvelle collection", path: "#new"},
+    {title: "Tous les bijoux", path: "#products"},
+    {title: "Les coups de cœur", path: "#bestSellers"},
     {title: "Me-contacter", path: "/"}
   ]
   return (
@@ -53,7 +52,7 @@ const Navbar = () => {
             {
               navItems.map(({title, path}) => (
                 <li key={title} className='hover:text-Gold'>
-                  <Link to="/">{title}</Link>
+                  <a href={`${path}`}>{title}</a>
                 </li>
               ))
             }
@@ -66,7 +65,7 @@ const Navbar = () => {
               {
                 navItems.map(({title, path}) => (
                   <li key={title} className='hover:font-semibold my-3 cursor-pointer'>
-                    <Link to="/">{title}</Link>
+                    <a href={`${path}`}>{title}</a>
                   </li>
                 ))
               }
