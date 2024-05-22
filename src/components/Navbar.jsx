@@ -14,9 +14,9 @@ const Navbar = () => {
   }
 
   const navItems = [
-    {title: "Nouvelle collection", path: "#new"},
-    {title: "Tous les bijoux", path: "#products"},
-    {title: "Les coups de cœur", path: "#bestSellers"},
+    {title: "Nouvelle collection", path: "/#new"},
+    {title: "Tous les bijoux", path: "/#products"},
+    {title: "Les coups de cœur", path: "/#bestSellers"},
     {title: "Me-contacter", path: "/"}
   ]
   return (
