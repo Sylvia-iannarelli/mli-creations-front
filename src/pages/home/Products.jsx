@@ -11,7 +11,7 @@ const Products = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("http://localhost:8000/api/products")
+                const response = await fetch("https://mli-creations-back-office.iannarelli.fr/api/products")
                 const data = await response.json()
                 setProducts(data)
                 setFilteredItems(data)
