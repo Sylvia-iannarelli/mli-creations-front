@@ -12,7 +12,6 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 
-
 const BestSellers = () => {
     const [products, setProducts] = useState([])
 
@@ -22,8 +21,8 @@ const BestSellers = () => {
 
     const bestSellers = products.filter((item) => item.status === "coups-de-cœur")
 
-    console.log(products)
-    console.log(bestSellers)
+    // console.log(products)
+    // console.log(bestSellers)
 
     return (
         <div id="bestSellers" className='max-w-screen-2xl container mx-auto xl:px-28 px-4 pt-20'>
@@ -69,7 +68,7 @@ const BestSellers = () => {
                     {
                         bestSellers.map((product) => (
                             <SwiperSlide className="pb-8" key={product.id}>
-                                <Link to={`/shop/${product.id}`}>
+                                <Link to={`/bijou/${product.id}`}>
                                     <img className='mx-auto w-full rounded-lg hover:scale-105 transition-all duration-300' src={`https://mli-creations-back-office.iannarelli.fr/uploads/photos/${product.picture}`} alt="" />
                                 </Link>
                                 <div className='mt-3 px-1'>
