@@ -33,7 +33,7 @@ const SingleProduct = () => {
 
                 <div className='mt-4'>
                     <a href="/" className='text-gray-600 hover:text-Gold'>Page d&apos;accueil / </a>
-                    <a href="/shop" className='font-bold text-Black'>Détail du bijou</a>
+                    <a href="/bijou" className='font-bold text-Black'>Détail du bijou</a>
                 </div>
 
                 <div className='mt-4 sm:mt-10'>

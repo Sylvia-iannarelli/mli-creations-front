@@ -8,7 +8,7 @@ const Cards = ({filteredItems}) => {
             // Pour montrer un nombre donné de produits : filteredItems.slice(0, 8).map((item) => (
             filteredItems.map((item) => (
                 <div key={item.id}>
-                    <Link to={`/shop/${item.id}`}>
+                    <Link to={`/bijou/${item.id}`}>
                         <img className='mx-auto w-full rounded-lg hover:scale-105 transition-all duration-300' src={`https://mli-creations-back-office.iannarelli.fr/uploads/photos/${item.picture}`} alt="" />
                     </Link>
                     <div className='mt-3 px-1'>
